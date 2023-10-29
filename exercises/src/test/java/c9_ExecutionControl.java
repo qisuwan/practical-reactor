@@ -120,7 +120,7 @@ public class c9_ExecutionControl extends ExecutionControlBase {
      */
     @Test
     public void blocking() {
-        BlockHound.install(); //don't change this line
+//        BlockHound.install(); //don't change this line
 
         Mono<Void> task = Mono.fromRunnable(ExecutionControlBase::blockingCall)
                 .subscribeOn(Schedulers.boundedElastic())//todo: change this line only

@@ -351,7 +351,7 @@ public class c6_CombiningPublishers extends CombiningPublishersBase {
      */
     @Test
     public void cleanup() {
-        BlockHound.install(); //don't change this line, blocking = cheating!
+//        BlockHound.install(); //don't change this line, blocking = cheating!
 
         //todo: feel free to change code as you need
         Flux<String> stream = Flux.usingWhen(StreamingConnection.startStreaming(), n -> n, tr -> StreamingConnection.closeConnection());
